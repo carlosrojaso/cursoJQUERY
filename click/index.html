@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>
+	Loren Ipsum
+</p>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+// Event setup using a convenience method
+$( "p" ).click(function() {
+    console.log( "You clicked a paragraph!" );
+    alert("click en el parrafo");
+});
+ 
+// Equivalent event setup using the `.on()` method
+$( "p" ).on( "click", function() {
+    console.log( "click" );
+    alert("click en el parrafo con on");
+});
+</script>
+</body>
+</html>

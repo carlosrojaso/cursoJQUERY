@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	.hover{
+		color:#efefef;
+	}
+	</style>
+</head>
+<body>
+<div id="menu">
+<ul class="lista">
+    <li>Test Jquery</li>
+    <li>Test Jquery2</li>
+    <li>Test Jquery3</li>
+</ul>
+</div>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+// The hover helper function
+$( "#menu .lista li" ).hover(function() {
+    $( this ).toggleClass( "hover" );
+});
+ 
+// The toggle helper function
+$( "p.expander" ).toggle( function() {
+    $( this ).prev().addClass( "open" );
+}, function() {
+    $( this ).prev().removeClass( "open" );
+});
+</script>
+<body>
+</html>
