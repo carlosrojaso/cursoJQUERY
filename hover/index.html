@@ -5,7 +5,13 @@
 	.hover{
 		color:#efefef;
 	}
+
+	.open{
+        font-size:14px;
+		color:#343434;
+	}
 	</style>
+
 </head>
 <body>
 <div id="menu">
@@ -14,6 +20,10 @@
     <li>Test Jquery2</li>
     <li>Test Jquery3</li>
 </ul>
+
+<p class="expander" style="display:none" class="open">
+	loren ipsum
+	</p>
 </div>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script>
@@ -22,6 +32,12 @@ $( "#menu .lista li" ).hover(function() {
     $( this ).toggleClass( "hover" );
 });
  
+// Equivalent event setup using the `.on()` method
+$( "#menu .lista li" ).on( "click", function() {
+      alert("hover");
+});
+
+
 // The toggle helper function
 $( "p.expander" ).toggle( function() {
     $( this ).prev().addClass( "open" );
