@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<button id="dbtn">Deshabilitar</button>
+<button id="abtn">Habilitar</button>
+<div align="center"><br>
+<input type="radio" name="group1" value="Milk"> Milk<br>
+<input type="radio" name="group1" value="Butter" checked> Butter<br>
+<input type="radio" name="group1" value="Cheese"> Cheese
+</div>
+<br>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#dbtn").click(function(){
+    $( "#group1" ).prop( "disabled", true );
+  });
+  $("#abtn").click(function(){
+    $( "#group1" ).prop( "disabled", false );
+  });
+});
+</script>
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<html>
+<head>
+	<style>
+	.big{
+		font-size: 40px !important; 
+		color: #666 !important;
+
+	}
+	</style>
+</head>
+<body>
+<ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+</ul>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+// Returns "lots of extra whitespace"
+
+$.trim( "    lots of extra whitespace    " );
+ 
+var myArray = [ 1, 2, 3, 4,5 ];
+ 
+if ( $.inArray( 4, myArray ) !== -1 ) {
+    console.log( "Lo encontre!" );
+}
+ 
+
+ 
+$( "li" ).each( function( index, element ){
+    console.log( $( this ).text() );
+});
+ 
+// Logs the following:
+// Link 1
+// Link 2
+// Link 3
+</script>
+</body>
+</html>
