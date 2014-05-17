@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>
+	Loren Ipsum
+</p>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+// Instantaneously hide all paragraphs
+$( "p" ).hide();
+ 
+// Instantaneously show all divs that have the hidden style class
+$( "p" ).show();
+ 
+// Slowly hide all paragraphs
+$( "p" ).hide( "slow" );
+ 
+// Quickly show all divs that have the hidden style class
+$( "p" ).show( "fast" );
+ 
+// Hide all paragraphs over half a second
+$( "p" ).hide( 5000 );
+ 
+// Show all divs that have the hidden style class over 1.25 seconds
+$( "p" ).show( 12500 );
+</script>
+</body>
+</html>
