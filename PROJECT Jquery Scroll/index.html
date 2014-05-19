@@ -85,9 +85,8 @@
 				if (typeof(Storage) != "undefined")
 				  {
 				  var objetoJSON = '{\"nombre\":\"' + $('#firstname').val() + '\",\"apellido\":\"' + $('#lastname').val() + '\",\"correo\":\"' + $('#correo').val() + '\"}';
-
-
-				  localStorage.setItem("usuario",JSON.stringify(objetoJSON));
+				  alert(objetoJSON);
+				  localStorage.setItem("usuario",objetoJSON);
 				  showMensaje();
 				  }
 				else
@@ -108,7 +107,7 @@
 		function showMensaje(){
 			alert("Su informacion fue guardada.\nNombre: " + $('#firstname').val() + "\nApellido: " + $('#lastname').val() + "\nCorreo: " + $('#correo').val());
 			}
-			
+					
         </script>
 </body>
 </html>
